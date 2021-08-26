@@ -20,6 +20,7 @@ public class techDepartment extends superDepartment {
         return("Complete by EOD");
     }
     public String getTechStackInformation(){
-        return("Core Java");
+        String st = " Core Java\n" +super.isTodayAHoliday();
+        return(st);
     }
 }
