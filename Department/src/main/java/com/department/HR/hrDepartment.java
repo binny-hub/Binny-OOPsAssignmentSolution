@@ -17,7 +17,8 @@ public class hrDepartment extends superDepartment{
         return("Fill today's worksheet and mark your attendance");
     }
     public String getWorkDeadline(){
-        return("Complete by EOD");
+       String st = "Complete by EOD\n" + super.isTodayAHoliday();
+        return(st);
     }
     public String doActivity(){
         return("team Lunch");
