@@ -18,6 +18,7 @@ public class adminDepartment extends superDepartment{
         return("Complete your documents Submission");
     }
     public String getWorkDeadline(){
-        return("Complete by EOD");
+        String st = "Complete by EOD\n" + super.isTodayAHoliday();
+        return(st);
     }
 }
