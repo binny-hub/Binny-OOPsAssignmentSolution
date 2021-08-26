@@ -16,18 +16,14 @@ public class department {
       System.out.println(ad.departmentName());
       System.out.println(ad.getTodaysWork());
       System.out.println(ad.getWorkDeadline());
-      System.out.println(ad.isTodayAHoliday());
       System.out.println();
-      hrDepartment hr = new hrDepartment(); // upcasting
-      // hr is referencing super class and object of subclass HRDepartment
-      hrDepartment hr1 = new hrDepartment(); 
-      // hr1 object is created of HRDepartment and referencing HrDepartment 
+      hrDepartment hr = new hrDepartment(); 
+      // hr object is created of HRDepartment and referencing HrDepartment 
       // since doActivity method is not present in super class
       System.out.println(hr.departmentName());
-      System.out.println(hr1.doActivity());
+      System.out.println(hr.doActivity());
       System.out.println(hr.getTodaysWork());
       System.out.println(hr.getWorkDeadline());
-      System.out.println(hr.isTodayAHoliday());
       System.out.println();
       //th is referencing SuperDepartment and object of TechDepartment
       techDepartment th = new techDepartment();
@@ -35,7 +31,6 @@ public class department {
       System.out.println(th.getTodaysWork());
       System.out.println(th.getWorkDeadline());
       System.out.println(th.getTechStackInformation()); 
-      System.out.println(th.isTodayAHoliday());
       System.out.println();
     
         // TODO code application logic here
