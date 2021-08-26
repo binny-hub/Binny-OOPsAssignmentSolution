@@ -10,13 +10,13 @@ package com.department.Super;
  * @author Dell
  */
 public class superDepartment {
-    public String departmentName(){
+    protected String departmentName(){
         return("Super Department");
     }
-    public String getTodaysWork(){
+    protected String getTodaysWork(){
         return("No work as of Now");
     }
-    public String getWorkDeadline(){
+    protected String getWorkDeadline(){
         return("Nil");
     }
     public String isTodayAHoliday(){
